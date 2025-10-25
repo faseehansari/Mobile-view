@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255, 218, 185);
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: rgb(247, 122, 76);
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h2 {
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* buttons in header */
+.btns {
+  display: inline-block;
+  margin-left: 10px;
+}
+header button {
+  border-radius: 15px;
+  padding: 3px 15px;
+  background: #000;
+  color: rgb(253, 197, 127);
+  border: none;
+}
+header button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* hero section */
+.img {
+  background: url("https://media.istockphoto.com/id/1502547874/vector/travel-to-world-on-banner-background-landscape-template-tourism-cards-road-trip-vacation-as.jpg") center/cover no-repeat;
+  height: 80vh;
+  position: relative;
+  color: #000;
+  text-align: center;
+}
+.herocontent {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+}
+.heroheading h1 {
+  font-size: 1.8rem;
+  color: #000;
+}
+.heropara {
+  font-size: 1rem;
+  margin: 15px 20px;
+}
+.herobtn button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid #000;
+  background: transparent;
+}
+.herobtn button:hover {
+  background: orangered;
+  color: white;
+}
+
+/* cards section */
+.cardsection {
+  padding: 20px;
+  text-align: center;
+}
+.cardheading span {
+  color: orangered;
+}
+.cardpara {
+  margin-bottom: 10px;
+}
+#btn4 {
+  border-radius: 10px;
+  padding: 8px 20px;
+  border: 1px solid #000;
+  background: white;
+  cursor: pointer;
+}
+#btn4:hover {
+  background: orangered;
+  color: #fff;
+}
+.cards {
+  text-align: center;
+}
+.card1 {
+  display: inline-block;
+  width: 90%;
+  max-width: 300px;
+  background-color: cornsilk;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  vertical-align: top;
+}
+.card1 img {
+  width: 100%;
+  border-radius: 8px;
+}
+.rating {
+  color: rgb(224, 156, 78);
+}
+.rating p {
+  display: inline-block;
+  color: black;
+}
+.location {
+  margin-top: 5px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  header h2, nav, .btns {
+    display: block;
+    margin: 5px 0;
+  }
+  .heroheading h1 {
+    font-size: 1.3rem;
+  }
+  .heropara {
+    font-size: 0.9rem;
+  }
+  .card1 {
+    width: 100%;
+  }
+}
